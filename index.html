@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="upper-div">
+            <div>
+                <label for="stdCity">Select City</label><br>
+                <select id="stdCity" class="upper-input">
+                <option disabled>Select City</option>
+                <option value="Karachi">Karachi</option>
+                <option value="lahore">lahore</option>
+                </select>
+            </div>
+            <div>
+                <label for="stdCourse">Select Course</label><br>
+                <select id="stdCourse" class="upper-input">
+                    <option disabled>Select Course</option>
+                    <option value="appDev">App dev</option>
+                    <option value="Wwb">Web</option>
+                </select>
+            </div>
+            <div>
+                <label for="stdName">Student Name</label><br>
+                <input type="text" id="stdName" class="upper-input">
+            </div>
+            <div>
+                <label for="stdFathername">Father's Name</label><br>
+                <input type="text" id="stdFathername" class="upper-input">
+            </div>
+            <div>
+                <label for="stdEmail">Email</label><br>
+                <input type="email" id="stdEmail" class="upper-input">
+            </div>
+            <div>
+                <label for="stdPhone">Phone</label><br>
+                <input type="number" id="stdPhone" class="upper-input">
+            </div>
+            <div>
+                <label for="stdCnic">CNIC</label><br>
+                <input type="number" id="stdCnic" class="upper-input">
+            </div>
+            <div>
+                <label for="stdFatherCnic">Father's CNIC</label><br>
+                <input type="number" id="stdFatherCnic" class="upper-input">
+            </div>
+            <div>
+                <label for="stdDob">Date of Birth</label><br>
+                <input type="date" id="stdDob" class="upper-input">
+            </div>
+            <div>
+                <label for="stdGender">Select Gender</label><br>
+                <select id="stdGender" class="upper-input">
+                    <option disabled>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="lower-div">
+            <div>
+                <label for="stdAddress">Address</label>
+                <input type="text" id="stdAddress" class="lower-input">
+            </div>
+            <div>
+                <label for="stdQuli">Last Qulification</label>
+                <input type="text" id="stdQuli" class="lower-input">
+            </div>
+            <div>
+                <label for="isLaptop">Do you have a laptop</label>
+                <select id="isLaptop" class="lower-input">
+                    <option disabled>Do you have a laptop</option>
+                    <option value="Yes">Yes</option>
+                    <option  value="No">No</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="end-div">
+            <div>
+                <label for="stdPic">Picture</label><br>
+                <input type="file" id="stdPic">
+            </div>
+            <div>
+                <p>With White or blue background File size must be less than 1mb File type:jpg,png,jpeg upload your recen passport size picture Your should be clearly visible without any glasses </p>
+            </div>
+        </div>
+        <div class="sum">
+            <button onclick="submitForm()">submit</button>
+        </div>
+    </div>
+    
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
